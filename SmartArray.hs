@@ -15,7 +15,7 @@ module SmartArray where
 	delete :: [Int] -> Int -> [Int]
 	delete [] _ = []
 	delete (x:xs) val
-			|	x == val = delete xs val
+			|	x == val  = delete xs val
 			| 	x  /= val = x : (delete xs val)
 	
 	
