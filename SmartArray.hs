@@ -21,15 +21,15 @@ module SmartArray where
 	delete :: [Int] -> Int -> [Int]
 	delete [] _ = []
 	delete (x:xs) val
-							|	x == val = delete xs val
-							| 	x  /= val = x : (delete xs val)
+			|	x == val = delete xs val
+			| 	x  /= val = x : (delete xs val)
 	
 	
 	pairs :: [Int] -> [(Int, Int)]
 	pairs [] = []
 	pairs (x:xs)
-					|	(-x) `elem` sorted_neg xs = (x,-x)  : pairs xs
-					| 	otherwise 						   = pairs xs
+			|	(-x) `elem` sorted_neg xs = (x,-x)  : pairs xs
+			| 	otherwise 		  = pairs xs
 	
 	
 	zerosum :: [Int] -> [[Int]]
@@ -51,10 +51,10 @@ module SmartArray where
 	qsort :: (Ord a) => [a] -> [a]
 	qsort [] = []
 	qsort (x:xs) =
-			 let 
-				lesser 	= filter ( <  x ) (qsort xs)
-				greater = filter ( >= x ) (qsort xs)
-			 in lesser ++ [x] ++ greater
+			let 
+			  lesser = filter ( <  x ) (qsort xs)
+			  greater = filter ( >= x ) (qsort xs)
+			in lesser ++ [x] ++ greater
 	
 	-- functie care sorteaza lista de numere negative
 	sorted_neg :: [Int] -> [Int]
