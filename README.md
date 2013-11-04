@@ -1,2 +1,2 @@
-SmarArray
+SmartArray
 =========
