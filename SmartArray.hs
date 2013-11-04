@@ -2,12 +2,6 @@
 	MARIN CRISTIAN-EMIL
 	
 	Implementarea SmartArray in paradigma functionala
-	
-	OBSERVATII: 
-			-> sursa am testat-o folosind interpretorul Prelude din GHCi pe Windows ( http://www.haskell.org/platform/windows.html)
-			-> metoda de testare: se intra in cmd, apoi "cd /calea_catre_fisier/" si se executa comanda "ghci". Din prelude se foloseste comanda: ":load SmartArray.hs" si apoi 
-se testeaza fiecare functie(add, delete, pairs, zerosum) utilizand o lista de test. Exemplu: delete [-3,6,5,3,10,6,2,3,9,-3,-2,-5] (-3) .	Am scris numarul -3 in paranteza pentru
-ca altfel aparea eroare de tip.
 --}
 
 module SmartArray where
